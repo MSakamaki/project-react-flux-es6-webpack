@@ -45,6 +45,9 @@ module.exports = {
     }, {
       test: /\.(png|jpg)$/,
       loader: 'url-loader?limit=8192'
+    }, {
+      test: /\.js$/,
+      loader: '6to5-loader'
     }]
   },
 
